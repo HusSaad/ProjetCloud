@@ -58,7 +58,5 @@ const requestListner = async function(req, res) {
 
 const server = http.createServer(requestListner);
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/api/v1/sysinfo`);
-    });
+server.listen(port || process.env.PORT);
  
