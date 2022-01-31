@@ -58,5 +58,5 @@ const requestListner = async function(req, res) {
 
 const server = http.createServer(requestListner);
 
-server.listen(port || process.env.PORT);
+server.listen(process.env.PORT || port);
  
