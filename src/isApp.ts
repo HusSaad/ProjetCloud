@@ -1,6 +1,6 @@
 const http = require('http');
 
-const si = require('systeminformation');
+export const si = require('systeminformation');
 const { resourceLimits } = require('worker_threads');
 
 const hostname = 'localhost';
