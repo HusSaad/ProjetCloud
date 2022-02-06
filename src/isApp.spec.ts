@@ -3,7 +3,7 @@ import { si } from './isApp';
 describe('typeScript test suite', () => {
   it('should return Cpu if exists or not"', () => {
     expect.assertions(1);
-    //verifier l'objet 
+
     expect(si).toHaveProperty('cpu');
   });
 });
